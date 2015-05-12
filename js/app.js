@@ -1,4 +1,4 @@
-var app=angular.Module('app',[]);
+var app=angular.module('app',[]);
 app.controller('testeCtlr', function($scope,$http,$window){
     $scope.atividades=[];
     $http.jsonp("https://gentle-caverns-6830.herokuapp.com/api/atividades/?format=jsonp&callback=JSON_CALLBACK")
